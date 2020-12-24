@@ -1,0 +1,101 @@
+body {
+    background: black;
+}
+.clock {
+    position: absolute;
+    left: 60%;
+    color: #17D4FE;
+    font-size: 40px;
+    font-family: Orbitron;
+    letter-spacing: 40px;
+    white-space: pre;
+}
+.clock span:nth-child(13),
+.clock span:nth-child(14),
+.clock span:nth-child(15),
+.clock span:nth-child(30),
+.clock span:nth-child(31),
+.clock span:nth-child(32)
+{
+    background: #090909;
+}
+.toggle {
+    color: black;
+    font-size: 15px;
+    font-family: Orbitron;
+    letter-spacing: 0px;
+}
+
+.cal {
+    position: absolute;
+    left: 15%;
+    color: #17D4FE;
+    font-size: 40px;
+    font-family: Orbitron;
+    letter-spacing: 45px;
+    white-space: pre;
+}
+.cal span:nth-child(1),
+.cal span:nth-child(2),
+.cal span:nth-child(3),
+.cal span:nth-child(4),
+.cal span:nth-child(5),
+.cal span:nth-child(6),
+.cal span:nth-child(7),
+.cal span:nth-child(8),
+.cal span:nth-child(9),
+.cal span:nth-child(10),
+.cal span:nth-child(11),
+.cal span:nth-child(12)
+{
+    background: #090909;
+}
+
+.J0{
+    background: url("images/J0.png");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    z-index: 100;
+}
+.J1{
+    background: url("images/J1.png");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    z-index: 100;
+}
+.L0{
+    background: url("images/L0.png");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    z-index: 100;
+}
+.L1{
+    background: url("images/L1.png");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    z-index: 100;
+}
+.R0{
+    background: url("images/R0.png");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    z-index: 100;
+}
+.R1{
+    background: url("images/R1.png");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    z-index: 100;
+}
+.S0{
+    background: url("images/S0.png");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    z-index: 100;
+}
+.S1{
+    background: url("images/S1.png");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    z-index: 100;
+}
