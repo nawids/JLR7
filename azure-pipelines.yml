@@ -10,14 +10,14 @@ steps:
 - task: FtpUpload@2
   inputs:
     credentialsOption: 'inputs'
-    serverUrl: 'ftp://nawidslr.com'
+    serverUrl: 'ftps://nawidslr.com'
     username: 'nawi01'
     password: 'Unesco1507'
     rootDirectory: 
     filePatterns: '**'
-    remoteDirectory: 'public_html/JLR7/'
+    remoteDirectory: '/public_html/JLR7/'
     enableUtf8: true
     clean: false
     cleanContents: false
-    preservePaths: false
-    trustSSL: false
+    preservePaths: true
+    trustSSL: true
