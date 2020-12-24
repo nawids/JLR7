@@ -1,0 +1,23 @@
+# Starter pipeline
+
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: FtpUpload@2
+  inputs:
+    credentialsOption: 'inputs'
+    serverUrl: 'nawidslr.com'
+    username: 'nawi01'
+    password: 'Unesco1507'
+    rootDirectory: 
+    filePatterns: '**'
+    remoteDirectory: 'public_html/JLR7/'
+    enableUtf8: true
+    clean: false
+    cleanContents: false
+    preservePaths: false
+    trustSSL: false
