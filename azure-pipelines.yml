@@ -10,7 +10,7 @@ steps:
 - task: FtpUpload@2
   inputs:
     credentialsOption: 'inputs'
-    serverUrl: 'nawidslr.com'
+    serverUrl: 'ftp://nawidslr.com'
     username: 'nawi01'
     password: 'Unesco1507'
     rootDirectory: 
