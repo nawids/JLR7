@@ -30,13 +30,13 @@ jobs:
         uses: wangyucode/sftp-upload-action@v1.1
         with:
           # 
-          host: sftp://nawidslr.com
+          host: nawidslr.com
           # 
           port: # optional, default is 22
           # 
           username: nawi01
           # 
-          password: Unesco1507
+          password: promethiumX60
           # 
           localDir: 
           # 
