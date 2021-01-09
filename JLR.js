@@ -4,12 +4,15 @@ var off= "0";
 var offsetchar = "&nbsp;";
 var offset = 1;
 var ss = "";
+var counter = 0;
 
 var don = "1";
 var ddouble = "0";
 var doff= "0";
 
 jlr7();
+jlr7date();
+
 function jlr7()
 {
     var date = new Date();
@@ -79,7 +82,6 @@ function printArray(array)
         }
         out = out + "\n";
     }
-    console.log(out);
     return out;
 }
 function fillArray(array,h,m)
@@ -127,7 +129,42 @@ function toggleOffset()
     }
 }
 
-jlr7date();
+function startAnimation()
+{
+
+    counter=0;
+    animate();
+}
+
+function animate()
+{
+    if(counter < 7)
+    {
+        counter++;
+        var face = createArray();
+        face = fillArrayAnimation(face);
+        var printed = printArray(face);
+        document.getElementById("jlr7display").innerHTML=printed;
+        setTimeout(animate, 150);
+    }
+}
+function fillArrayAnimation(array,h,m)
+{
+    var x = array;
+    for (var i = 0; i < x.length; i++)
+    {
+        for (var j = 0; j < x[i].length; j++)
+        {
+            var answers = [ on, off];
+            var index = Math.floor(Math.random(1,2) * 2);
+            x[i][j] = answers[index];
+        }
+    }
+    return array;
+}
+
+
+
 function jlr7date()
 {
     var today = new Date();
@@ -196,4 +233,13 @@ function fillDateArray(array,mm,dd)
         }
     }
     return array;
+}
+
+
+function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
 }
