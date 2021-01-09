@@ -32,14 +32,14 @@ jobs:
           # 
           host: nawidslr.com
           # 
-          port: # optional, default is 22
+          port: 22
           # 
           username: nawi01
           # 
           password: promethiumX60
           # 
-          localDir: 
+          localDir: .
           # 
           remoteDir: /public_html/JLR7/
           # 
-          dryRun: # optional
+          dryRun: 0
