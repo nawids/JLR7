@@ -17,7 +17,7 @@ function jlr7()
     let date = new Date();
     let h = date.getHours(); // 0 - 23
     let m = date.getMinutes(); // 0 - 59
-    if(h == 0){
+    if(h === 0){
         h = 12;
     }
     if(h > 12){
@@ -28,7 +28,7 @@ function jlr7()
     face = fillArray(face,h,m);
     face[7][seconds] = on;
     seconds++;
-    if(seconds == 4)
+    if(seconds === 4)
     {
         seconds =1 ;
     }
@@ -94,12 +94,12 @@ function fillArray(array,h,m)
             x[i][j] = on;
             h--;
         }
-        if(q>0 && i==3)
+        if(q>0 && i===3)
         {
             x[i][j] = on;
             q--;
         }
-        if(m>0 && i==3)
+        if(m>0 && i===3)
         {
             x[3][3]= on;
         }

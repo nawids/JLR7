@@ -17,7 +17,7 @@ body {
 .clock span:nth-child(31),
 .clock span:nth-child(32)
 {
-    background: #090909;
+    background: #1f1f1f;
 }
 .toggle {
     color: black;
@@ -48,7 +48,7 @@ body {
 .cal span:nth-child(11),
 .cal span:nth-child(12)
 {
-    background: #090909;
+    background: #1f1f1f;
 }
 
 .J0{
