@@ -1,40 +1,63 @@
+/* General Styles */
 body {
     background: black;
+    margin: 0;
+    padding: 0;
 }
+
+/* Clock Style */
 .clock {
     position: absolute;
-    left: 60%;
+    left: 40%;
+    top: 20%;
     color: #17D4FE;
     font-size: 40px;
     font-family: Orbitron, serif;
     letter-spacing: 40px;
     white-space: pre;
 }
-.clock span:nth-child(13),
-.clock span:nth-child(14),
-.clock span:nth-child(15),
-.clock span:nth-child(30),
-.clock span:nth-child(31),
-.clock span:nth-child(32)
-{
-    background: #1f1f1f;
-}
-.toggle {
-    color: black;
-    font-size: 15px;
-    font-family: Orbitron, serif;
-    letter-spacing: 0;
-}
 
+/* Calendar Style */
 .cal {
     position: absolute;
     left: 15%;
+    top: 50%;
     color: #17D4FE;
     font-size: 40px;
     font-family: Orbitron, serif;
     letter-spacing: 45px;
     white-space: pre;
 }
+
+/* Button */
+.toggle {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: black;
+    font-size: 15px;
+    font-family: Orbitron, serif;
+    letter-spacing: 0;
+    padding: 10px 20px;
+    background-color: #17D4FE;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Symbol Backgrounds */
+.J0, .J1, .L0, .L1, .R0, .R1, .S0, .S1 {
+    background-size: 30px 30px;
+    z-index: 100;
+}
+
+/* Grey Background for Specific Elements */
+.clock span:nth-child(13),
+.clock span:nth-child(14),
+.clock span:nth-child(15),
+.clock span:nth-child(30),
+.clock span:nth-child(31),
+.clock span:nth-child(32),
 .cal span:nth-child(1),
 .cal span:nth-child(2),
 .cal span:nth-child(3),
@@ -46,48 +69,67 @@ body {
 .cal span:nth-child(9),
 .cal span:nth-child(10),
 .cal span:nth-child(11),
-.cal span:nth-child(12)
-{
+.cal span:nth-child(12) {
     background: #1f1f1f;
 }
 
-.J0{
-    background: url("images/J0.png") no-repeat;
-    background-size: 30px 30px;
-    z-index: 100;
+/* Media Queries */
+@media (max-width: 1024px) {
+    .clock {
+        left: 55%;
+        top: 15%;
+        font-size: 30px;
+        letter-spacing: 30px;
+    }
+    .cal {
+        left: 12%;
+        top: 45%;
+        font-size: 30px;
+        letter-spacing: 35px;
+    }
+    .toggle {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
 }
-.J1{
-    background: url("images/J1.png") no-repeat;
-    background-size: 30px 30px;
-    z-index: 100;
+
+@media (max-width: 768px) {
+    .clock {
+        left: 50%;
+        top: 12%;
+        font-size: 25px;
+        letter-spacing: 20px;
+    }
+    .cal {
+        left: 10%;
+        top: 40%;
+        font-size: 25px;
+        letter-spacing: 25px;
+    }
+    .toggle {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
 }
-.L0{
-    background: url("images/L0.png") no-repeat;
-    background-size: 30px 30px;
-    z-index: 100;
-}
-.L1{
-    background: url("images/L1.png") no-repeat;
-    background-size: 30px 30px;
-    z-index: 100;
-}
-.R0{
-    background: url("images/R0.png") no-repeat;
-    background-size: 30px 30px;
-    z-index: 100;
-}
-.R1{
-    background: url("images/R1.png") no-repeat;
-    background-size: 30px 30px;
-    z-index: 100;
-}
-.S0{
-    background: url("images/S0.png") no-repeat;
-    background-size: 30px 30px;
-    z-index: 100;
-}
-.S1{
-    background: url("images/S1.png") no-repeat;
-    background-size: 30px 30px;
-    z-index: 100;
+
+@media (max-width: 480px) {
+    .clock {
+        left: 45%;
+        top: 10%;
+        font-size: 20px;
+        letter-spacing: 15px;
+    }
+    .cal {
+        left: 8%;
+        top: 35%;
+        font-size: 20px;
+        letter-spacing: 20px;
+    }
+    .toggle {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
 }

@@ -10,7 +10,7 @@ let don = "1";
 let ddouble = "0";
 
 jlr7();
-jlr7date();
+// jlr7date();
 
 function jlr7()
 {
@@ -74,7 +74,7 @@ function printArray(array)
         {
             let symbol = ss[i][j];
             out = out +"<span>"+
-                    "<img width=\"30\" height=\"30\" src=\"images/"+symbol+""+x[i][j]+".png\" alt=\"\">"+
+                    "<img width=\"25\" height=\"25\" src=\"images/"+symbol+""+x[i][j]+".png\" alt=\"\">"+
                     "&nbsp;</span>";
         }
         out = out + "\n";
